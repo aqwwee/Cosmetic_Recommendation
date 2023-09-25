@@ -221,7 +221,8 @@ def generate_wordcloud(texts):
         words.extend(nouns)
     
     # 워드클라우드 생성
-    wc = wordcloud.WordCloud(font_path='C:\Windows\Fonts\malgun.ttf', background_color='white', width=800, height=400)
+    # wc = wordcloud.WordCloud(font_path='C:\Windows\Fonts\malgun.ttf', background_color='white', width=800, height=400)
+    wc = wordcloud.WordCloud(font_path='./malgun.ttf', background_color='white', width=800, height=400)
     wc.generate(' '.join(words))
     
     return wc
